@@ -127,7 +127,7 @@ function validateNumber(value) {
         filter: Number
     }
 ]).then(function(input) {
-    var item = input.item_id;
+    var item = input.id;
     var returnQty = input.return_qty;
 
     connection.query("SELECT * FROM  Products WHERE ?", {item_name: item}, function(err, res) {

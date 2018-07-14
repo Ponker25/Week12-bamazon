@@ -61,7 +61,7 @@ function start() {
                if (chosenItem.stock_qty > parseInt(answer.sale)) {
                    var updatedQty = chosenItem.stock_qty-parseInt(answer.sale);
                    console.log("New Qty= " +updatedQty);
-                   connection.query("UPDATE Products SET ? WHERE ?",[{stock_qty: updatedQty},{item_id: chosenItem.id}],function(err) {
+                   connection.query("UPDATE Products SET ? WHERE ?",[{stock_qty: updatedQty},{id: chosenItem.id}],function(err) {
                            if (err) throw err;
                            var total = chosenItem.item_price*answer.sale;
                            console.log("=============================================================================");
