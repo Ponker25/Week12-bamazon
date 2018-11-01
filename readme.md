@@ -1,6 +1,6 @@
 <h1>Bamazon Store</h1>
 
-![Alt Text](images/Customer View1.png)
+![Alt Text](/images/Customer View1.png)
 
 **Description:**
 
